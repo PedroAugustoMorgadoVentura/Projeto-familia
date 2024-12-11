@@ -1,0 +1,87 @@
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6; /* Cor de fundo suave */
+    color: #333;  /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Título */
+h1 {
+    font-family: 'Georgia', serif;
+    color: #007bff;  /* Azul para destacar */
+    font-weight: bold;
+    text-align: center; /* Centraliza o título */
+    margin-top: 20px;
+}
+
+/* Cards */
+.card {
+    margin-top: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Sombra mais suave */
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+/* Linhas de texto */
+.black-line {
+    background-color: #343a40; /* Cor de fundo escuro */
+    color: white;  /* Texto branco */
+    margin-bottom: 8px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;  /* Transições suaves */
+}
+.hidden {
+    display: none !important; /* Garante que o elemento será escondido */
+}
+
+
+
+/* Efeito hover para as linhas de texto */
+.black-line:hover {
+    background-color: #007bff;  /* Cor de fundo quando hover */
+    color: white;  /* Cor do texto em hover */
+    transform: scale(1.05); /* Aumento suave */
+    cursor: pointer;  /* Indica que é interativo */
+}
+
+/* Imagem */
+.img-fluid {
+    max-height: 250px; /* Limita a altura da imagem */
+    object-fit: cover;
+    border-radius: 8px;  /* Bordas arredondadas para a imagem */
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.8rem;  /* Tamanho reduzido do título em telas pequenas */
+    }
+
+    .black-line {
+        font-size: 1rem;  /* Ajusta o tamanho das linhas de texto */
+        padding: 10px;  /* Ajusta o espaçamento interno */
+    }
+
+    .card-body {
+        padding: 15px;  /* Ajusta o padding nos cards */
+    }
+}
+
+/* Margens em telas grandes */
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
